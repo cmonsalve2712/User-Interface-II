@@ -55,17 +55,7 @@ html, body {
              display: block;
              align-items: center;
              
-            
-    
-}
-
-ul{
-    
-    margin: 14px;
-    padding: 2;
-    width: 120px;
-    background-color: #f1f1f1;
-    border: 1px solid #555;
+        
   
     
 }
@@ -73,6 +63,8 @@ ul{
 .about h1{display: flex;
         justify-content: space-around;
         padding: 6% 0;
+        font-family: fantasy;
+        font-size: 180%;
 }
 
 
@@ -82,6 +74,8 @@ ul{
             color: white;
             background-color: rosybrown;
             text-decoration: none;
+            border-radius: 3px;
+            border: 1px solid rgb(65, 61, 61);
         
         }
 
@@ -103,13 +97,20 @@ ul{
     
 }
 
-.computer img{
-    width: 90%;
+.computer{
+    width: 100%;
     height: 80%;
-    padding-left: 10%;
     display: flex;
-    justify-content: space-around;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 40%;
     
+    
+}
+
+img{
+    border-radius: 10px;
+    border: 4px solid rgb(15, 15, 15);
 }
 
 
@@ -135,10 +136,12 @@ p{
         display:flex;
         justify-content: space-around;
         padding: 9% 0;
+        font-family: fantasy;
+    
         
 }
 
-.part1 div{ width: 23%;
+.part1 div{ width: 30%;
             border-bottom: 2px dashed black;
             padding-bottom: 3%;
             
@@ -146,21 +149,17 @@ p{
 
 }
 
-.part1 a{ border:3px solid black;
-        padding:8px;
-        border-radius:10px;
-        margin: 8%;
 
-}
 
 .part2{flex-direction: row;
     display:flex;
     justify-content: space-around;
     padding: 5% 0;
+    font-family: fantasy;
 
 }
 
-.part2 div{ width: 23%;
+.part2 div{ width: 30%;
     padding-bottom: 10%;
        
 
@@ -195,6 +194,134 @@ button:hover{
     
 }
 
+/*************MOBILE STYLES*****************/
+@media(max-width:800px){/*anything less than 800px will inherit the styles*/
+
+    body {
+        line-height: 2;
+        background-image: url('images/background.jpg');
+        
+        font-size:20px;
+    }
+    
+   
+    }
+    /* */
+    html, body {
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    
+    
+    .main div{
+                 text-align: center;
+                 display: block;
+                 align-items: center;
+                 
+            
+    
+    }
+    
+    
+    
+    
+    .main nav a{font-size: 20px;
+                color: white;
+                background-color: rosybrown;
+                text-decoration: none;
+            
+            }
+    
+    #name{
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        display: inline-block;
+    }
+    
+    .main nav{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4%;
+        width: 50%;
+        display: inline-block;
+        
+    }
+    
+    .computer{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 2em;
+        padding-right: 2em;
+        
+    }
+    
+    
+    
+    .container {
+        width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        border: 20px;
+        border-style:solid;
+        border-color:rgb(216, 173, 210);
+        
+        
+    }
+    
+    p{
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    
+    
+    .part1{flex-direction: row;
+            display:flex;
+            justify-content: space-around;
+            padding: 3% 0;
+            
+    }
+    
+    .part1 div{ 
+                
+                padding-bottom: 3%;
+
+    }
+    
+    .part1 a{
+            padding:8px;
+            border-radius:10px;
+            margin: 8%;
+    
+    }
+    
+    .part2{flex-direction: row;
+        display:flex;
+        justify-content: space-around;
+        padding: 3% 0;
+    
+    }
+    
+    .part2 div{ 
+        padding-bottom: 10%;
+           
+    
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+   
 
 
 
